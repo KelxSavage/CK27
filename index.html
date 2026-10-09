@@ -726,7 +726,7 @@ function playBackgroundMusic() {
     musicTracks.forEach(track => {
         if (track !== activeMusic) track.pause();
     });
-    activeMusic.volume = 0.05;
+    activeMusic.volume = 0.01;
     activeMusic.play().then(() => {
         updateMusicButton(true);
     }).catch(() => {
